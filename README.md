@@ -35,7 +35,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	res, err := solver.Solve(context.Background(), "https://shop.axs.com/")
+	res, err := solver.Solve(context.Background(), "https://example.com/")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -82,7 +82,7 @@ Use the cookie with the same proxy IP and `res.UserAgent`, or Cloudflare will ch
 Each retry uses a fresh session, because Cloudflare keeps rejecting a session that failed once.
 A proxy IP that keeps failing is usually flagged; rotate it.
 
-## Supported sites and pricing
+## Pricing
 
-See the [Flash Solvers docs](https://docs.flashsolvers.com/#cloudflare-overview).
+See the [Flash Solvers docs](https://docs.flashsolvers.com/#cloudflare-overview) for pricing and the full API reference.
 You are charged once per solve that reaches the final form, never for failures.

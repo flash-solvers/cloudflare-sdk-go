@@ -1,6 +1,6 @@
 // Solve a Cloudflare challenge and print the cf_clearance cookie.
 //
-//	FLASH_API_KEY=... go run ./examples/solve https://shop.axs.com/
+//	FLASH_API_KEY=... go run ./examples/solve https://example.com/
 package main
 
 import (
